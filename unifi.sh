@@ -22,7 +22,6 @@
 #  http://community.ubnt.com/t5/UniFi/UniFi-controller-on-Debian-v7-1-x64-not-working/td-p/523245
 #
 ######## FUNCTIONS ########
-
 function update(){
 	# Edit the /etc/apt/sources.list file
 		check=$(grep "ubiquiti" /etc/apt/sources.list)
