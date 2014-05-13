@@ -26,6 +26,7 @@ function update(){
 	# Edit the /etc/apt/sources.list file
 		check=$(grep "ubiquiti" /etc/apt/sources.list)
 		if [[ -z "$check" ]]; then
+		echo
 		echo -e '\e[01;34m+++ Updating /etc/apt/sources.list...\e[0m'
 		cat <<EOA>> /etc/apt/sources.list
 
@@ -57,6 +58,7 @@ EOA
 function install_java(){
 
 	# Installs Java
+		echo
 		echo -e '\e[01;34m+++ Install Java...\e[0m'
 		apt-get install -y openjdk-7-jre
 		echo -e '\e[01;37;42mJava has been successfully installed!\e[0m'
@@ -64,6 +66,7 @@ function install_java(){
 }
 function install_unifi(){
 	# Install the Ubiquiti Unifi controller
+		echo
 		echo -e '\e[01;34m+++ Installing the Ubiquiti unifi controller software...\e[0m'
 		apt-get install -y unifi
 		echo -e '\e[01;37;42mThe Ubiquiti unifi controller software has been successfully installed!\e[0m'
