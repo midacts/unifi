@@ -3,8 +3,12 @@ unifi
 
 Script to install Ubiquiti's unifi controller on a Debian Linux machine
 
+-
+
 My only other recommendation besides running this script is to make your partition you will be installing unifi on to be in 
-the neighborhood of 20GBs. Otherwise you will get error messages like this in /var/log/mongodb/mongodb.log
+the neighborhood of 20GBs. You might be able to get away with 6, or maybe 10- but I like to make sure my machines have some room to grow in case they need to.
+
+Otherwise you will get error messages like this in /var/log/mongodb/mongodb.log
 
 Tue May 13 13:08:21.851 [initandlisten] ERROR: Insufficient free space for journal files
 Tue May 13 13:08:21.851 [initandlisten] Please make at least 3379MB available in /var/lib/mongodb/journal or use --smallfiles
